@@ -10,7 +10,7 @@ public class ReadArrayInput {
 		Scanner sc=new Scanner(System.in);
 		System.out.println("\n enter the size of an array");
 		int n=sc.nextInt();
-		System.out.println("\n enter + " +n +"elements");
+		System.out.println("\n enter  " +n +"elements");
 		int ar[]=new int[n];
 		for(int i=0;i<n;i++) {
 			ar[i]=sc.nextInt();
