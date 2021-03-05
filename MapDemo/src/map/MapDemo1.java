@@ -3,6 +3,8 @@ package map;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
 import java.util.TreeMap;
 
 public class MapDemo1 {
@@ -40,7 +42,16 @@ public class MapDemo1 {
 		System.out.println(tm.keySet());
 		System.out.println(tm.values());
 		
+		Set<Integer> set=hm.keySet();
+		System.out.println("\n iterating on the map");
 		
+		for(Integer i:set) {
+			System.out.println("key is:" + i + hm.get(i));
+		}
+		
+		for(Entry<Integer,String> e :hm.entrySet()) {
+			System.out.println("key ->" + e.getValue());
+		}
 
 	}
 
