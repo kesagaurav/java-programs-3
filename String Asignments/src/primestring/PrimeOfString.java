@@ -6,19 +6,36 @@ public class PrimeOfString {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int count=0;
 		Scanner sc=new Scanner(System.in);
-		System.out.println("\n enter an string");
+		System.out.println("\n enter string");
 		String s=sc.nextLine();
 		for(int i=0;i<s.length();i++) {
-			if(s.charAt(i)%1==0) {
-				count++;
+			if(isPrime(i)) {
+				System.out.println("the prime number  " + s.toUpperCase().charAt(i-1) +  " and which is at the index of " + i);
 			}
 		}
 		
-		System.out.println("the prime characters are" + count);
-
-
+	
 	}
+	
+	
+	static boolean isPrime(int n) {
+		int c=0;
+		for (int i = 1; i <=n; i++) {
+			if(n%i==0) {
+				c++;
+			}
+		}
+		if(c==2) {
+			return true;
+		}else {
+			return false;
+		}
+	}
+		
+			
+			
+
+	
 
 }
