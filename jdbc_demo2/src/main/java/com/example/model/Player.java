@@ -2,23 +2,16 @@ package com.example.model;
 
 public class Player {
 
-	
-
-	public Player(int id, String name, int age, String gender, String city) {
-		super();
-		this.id = id;
-		this.name = name;
-		this.age = age;
-		this.gender = gender;
-		this.city = city;
-	}
-
-
 	private int id;
 	private String name;
 	private int age;
 	private String gender;
 	private String city;
+
+	
+
+
+	
 	
 	
 	public Player() {
@@ -27,14 +20,18 @@ public class Player {
 	}
 	
 
-	public Player(int id, String name, String city, int age, String gender) {
+	
+	public Player(int id, String name, int age, String gender, String city) {
 		super();
 		this.id = id;
 		this.name = name;
-		this.city = city;
 		this.age = age;
 		this.gender = gender;
+		this.city = city;
 	}
+	
+	
+	
 
 
 	public int getId() {
