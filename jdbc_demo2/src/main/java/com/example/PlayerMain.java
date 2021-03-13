@@ -105,7 +105,21 @@ public class PlayerMain {
 			for (Player p : playerList) {
 				System.out.println(p);
 			}
+			
+			
+			int id=3;
+			int p2=pl.deletePlayer(id);
+			if(p2>0) {
+				System.out.println("\n deleted at " + id);
+			}else {
+				System.out.println("\n false");
+			}
+			
+			
+			
 		}
+		
+		
 		
 		
 		

@@ -69,34 +69,28 @@ int c=0;
 
 	@Override
 	public int deletePlayer(int id) {
-		return id;
+	
 		// TODO Auto-generated method stub
-//		int d=0;
-//		try(Connection con=PostresConnection.getConnection()){
-//			String sql="delete from player4 where id=?";
-//			PreparedStatement ps=con.prepareStatement(sql);
-//			ps.setInt(1,id);
-//			ResultSet rs=ps.executeQuery(sql);
-//			while(rs.next()) {
-//				Player p=new Player();
-//				p.setId(id);
-//				p.setAge(rs.getInt("age"));
-//				p.setCity(rs.getString("city"));
-//				p.setGender(rs.getString("gender"));
-//				p.setName(rs.getString("name"));
-//				
-//			}
-//			
-//			d=ps.executeUpdate();
+		int d=0;
+		try(Connection con=PostresConnection.getConnection()){
+			String sql="delete from player4 where id=?";
+			PreparedStatement ps=con.prepareStatement(sql);
+			ps.setInt(1,id);
+		
+		
+			d=ps.executeUpdate();
+			//System.out.println("\n recoeded is" + d);
+			
+			
 //			
 //			
 //			
-//			
-//		} catch (ClassNotFoundException | SQLException e) {
-//			// TODO Auto-generated catch block
-//			System.out.println(e);
-//		}
-//		
+		} catch (ClassNotFoundException | SQLException e) {
+			// TODO Auto-generated catch block
+			System.out.println(e);
+		}
+		return d;
+		
 //		
 
 		
