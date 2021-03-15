@@ -1,0 +1,19 @@
+{TRACE} - [log4j_demo.main.Main] - hello from trace  2021-03-15 08:42:10,249
+{DEBUG} - [log4j_demo.main.Main] - hello from debug  2021-03-15 08:42:10,249
+{INFO} - [log4j_demo.main.Main] - hello from info  2021-03-15 08:42:10,250
+{WARN} - [log4j_demo.main.Main] - hello from warn  2021-03-15 08:42:10,250
+{ERROR} - [log4j_demo.main.Main] - hello from error  2021-03-15 08:42:10,250
+{TRACE} - [log4j_demo.main.Main] - hello from trace  2021-03-15 13:24:31,320
+{DEBUG} - [log4j_demo.main.Main] - hello from debug  2021-03-15 13:24:31,321
+{INFO} - [log4j_demo.main.Main] - hello from info  2021-03-15 13:24:31,321
+{WARN} - [log4j_demo.main.Main] - hello from warn  2021-03-15 13:24:31,322
+{ERROR} - [log4j_demo.main.Main] - hello from error  2021-03-15 13:24:31,322
+{DEBUG} - [log4j_demo.main.Main] - makking call to logservice  2021-03-15 13:24:31,323
+{DEBUG} - [log4j_demo.service.log4jService] - 
+ helllo from service  2021-03-15 13:24:31,324
+{INFO} - [log4j_demo.service.log4jService] - hello from customer from logservice  2021-03-15 13:24:31,324
+{DEBUG} - [com.example.dao.LogrjDao] - hello  2021-03-15 13:24:31,324
+{INFO} - [com.example.dao.LogrjDao] - hi  2021-03-15 13:24:31,324
+{DEBUG} - [com.example.dao.LogrjDao] - bye from logdao  2021-03-15 13:24:31,324
+{DEBUG} - [log4j_demo.service.log4jService] - bye from logservice  2021-03-15 13:24:31,324
+{DEBUG} - [log4j_demo.main.Main] - completed call from logservice  2021-03-15 13:24:31,324

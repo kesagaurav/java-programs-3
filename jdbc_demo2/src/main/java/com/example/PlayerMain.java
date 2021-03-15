@@ -94,37 +94,43 @@ public class PlayerMain {
 //			}
 //		}
 		
+//		
+//		String city="warangal1";
+//		List<Player> playerList =pl.getAllPlayersByCity(city);
+//		if (playerList.size() == 0) {
+//			System.out.println("No players as of now from the teamLocation "+city);
+//		} else {
+//			System.out.println("Total there are " + playerList.size() + " no of player/s in DB from team : "+city);
+//			System.out.println("Printing their details");
+//			for (Player p : playerList) {
+//				System.out.println(p);
+//			}
+//		}
+//			
 		
-		String city="warangal1";
-		List<Player> playerList =pl.getAllPlayersByCity(city);
-		if (playerList.size() == 0) {
-			System.out.println("No players as of now from the teamLocation "+city);
-		} else {
-			System.out.println("Total there are " + playerList.size() + " no of player/s in DB from team : "+city);
-			System.out.println("Printing their details");
-			for (Player p : playerList) {
-				System.out.println(p);
-			}
-			
-			
-			int id=3;
+		
+		
+		
+		
+		int id=12;
 			int p2=pl.deletePlayer(id);
 			if(p2>0) {
 				System.out.println("\n deleted at " + id);
 			}else {
 				System.out.println("\n false");
 			}
+		
+		}// this is the closing bracket of psvm		
 			
 			
-			
-		}
 		
 		
 		
+} // this is the closing bracket of class
 		
 		
 
-}
+
 //		int id=3;
 //		int p2=pl.deletePlayer(id);
 //		if(p2>0) {
@@ -150,7 +156,7 @@ public class PlayerMain {
 		
 		
 	
-}
+
 	
 
 		

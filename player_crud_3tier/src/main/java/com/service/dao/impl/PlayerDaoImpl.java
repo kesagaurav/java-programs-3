@@ -39,20 +39,32 @@ public class PlayerDaoImpl implements PlayerCrudDao {
 
 	@Override
 	public int updatePlayer(int id, String city) throws BusinnessException {
-		// TODO Auto-generated method stub
-		return 0;
+		int e=0;
+		try(Connection con=PostGresConnection.getConnection()){
+			String sql="update  player4 set city=? where id=?";
+			PreparedStatement ps=con.prepareStatement(sql);
+			ps.setString(1, city);
+			ps.setInt(2, id);
+			e=ps.executeUpdate();
+			System.out.println("\n update the record " + e);
+		} catch (ClassNotFoundException e1) {
+			e1.printStackTrace();
+		} catch (SQLException e1) {
+		e1.printStackTrace();
+		}
+		return e;
 	}
 
 	@Override
 	public int deletePlayer(int id) throws BusinnessException {
-		Player player=new Player();
+	
 		int d=0;
 		try(Connection connection=PostGresConnection.getConnection()){
-			String sql="delete from  player4 where id=?:";
+			String sql="delete from  player4 where id=?";
 			PreparedStatement ps=connection.prepareStatement(sql);
-			ps.setInt(2,id);
+			ps.setInt(1,id);
 			d=ps.executeUpdate();
-		System.out.println("\n deleted the record" + d);
+		System.out.println("\n deleted the record " + d);
 		}catch(Exception e) {
 			e.printStackTrace();
 			throw new BusinnessException("could not delte the id ... plz check again");

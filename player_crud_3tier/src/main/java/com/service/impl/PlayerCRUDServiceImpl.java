@@ -50,14 +50,14 @@ public class PlayerCRUDServiceImpl implements PlayerCRUDService {
 	
 	@Override
 	public int updatePlayer(int id, String city) throws BusinnessException {
-		// TODO Auto-generated method stub
-		return 0;
+	
+return pcd.updatePlayer(id, city);
 	}
 
 	@Override
 	public int deletePlayer(int id) throws BusinnessException {
 		// TODO Auto-generated method stub
-		return 0;
+		return pcd.deletePlayer(id);
 	}
 
 	@Override

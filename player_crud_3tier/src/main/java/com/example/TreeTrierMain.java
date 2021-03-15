@@ -103,14 +103,20 @@ public class TreeTrierMain {
 				}
 			break;
 			case 2:
-				System.out.println("under construction");
+				try {
+					int id=2;
+					String city="warangal";
+					System.out.println(pcs.updatePlayer(id, city));
+				
+				}catch (BusinnessException e1) {
+				e1.printStackTrace();
+				}
 				break;
 			case 3:
-				int id=3;
 				try {
-				
-					System.out.println(pcs.deletePlayer(id));
-					System.out.println("deleted is" + id);
+					int id1=1;
+					System.out.println(pcs.deletePlayer(id1));
+					//System.out.println("deleted is" + id);
 				} catch (BusinnessException e1) {
 				
 					e1.printStackTrace();
@@ -118,7 +124,8 @@ public class TreeTrierMain {
 				break;
 			case 4:
 				try {
-					System.out.println(pcs.getAllPlayers());
+					System.out.println("\n printing all the players");
+					System.out.println("\n" + pcs.getAllPlayers());
 				} catch (BusinnessException e) {
 					e.printStackTrace();
 				}
